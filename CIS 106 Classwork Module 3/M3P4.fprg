@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M3P4"/>
+        <attribute name="authors" value="shama"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-07 04:21:44 PM"/>
+        <attribute name="created" value="c2hhbWE7REVTS1RPUC1HSFRTUVVGOzIwMjYtMTAtMDc7MDM6NDk6MzEgUE07MjkzMw=="/>
+        <attribute name="edited" value="c2hhbWE7REVTS1RPUC1HSFRTUVVGOzIwMjYtMTAtMDc7MDQ6MjE6NDQgUE07MTszMDM2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="make, model" type="String" array="False" size=""/>
+            <declare name="msrp, discount" type="Real" array="False" size=""/>
+            <declare name="amountoff" type="Real" array="False" size=""/>
+            <declare name="discountedprice" type="Real" array="False" size=""/>
+            <input variable="make"/>
+            <input variable="model"/>
+            <input variable="msrp"/>
+            <input variable="discount"/>
+            <assign variable="amountoff" expression="msrp*discount"/>
+            <assign variable="discountedprice" expression="msrp-amountoff"/>
+            <output expression="&quot;Make: &quot; &amp; make &amp; &quot; | Model: &quot; &amp; model &amp; &quot; | Final Price: $&quot; &amp; discountedprice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

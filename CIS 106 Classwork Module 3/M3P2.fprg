@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M3P2"/>
+        <attribute name="authors" value="shama"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-07 02:13:48 PM"/>
+        <attribute name="created" value="c2hhbWE7REVTS1RPUC1HSFRTUVVGOzIwMjYtMTAtMDc7MDI6MDY6NDEgUE07MjkyNg=="/>
+        <attribute name="edited" value="c2hhbWE7REVTS1RPUC1HSFRTUVVGOzIwMjYtMTAtMDc7MDI6MTM6NDggUE07MTszMDM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lastname" type="String" array="False" size=""/>
+            <declare name="midterm" type="Real" array="False" size=""/>
+            <declare name="finalexam" type="Real" array="False" size=""/>
+            <declare name="totalpoints" type="Real" array="False" size=""/>
+            <input variable="lastname"/>
+            <input variable="midterm"/>
+            <input variable="finalexam"/>
+            <assign variable="totalpoints" expression="(midterm*0.40)+(finalexam*0.60)"/>
+            <output expression="&quot;Student Name: &quot; &amp; lastname &amp; &quot; |Total Grade: &quot; &amp; totalpoints" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

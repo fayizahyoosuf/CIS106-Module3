@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M3P3"/>
+        <attribute name="authors" value="shama"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-07 03:41:40 PM"/>
+        <attribute name="created" value="c2hhbWE7REVTS1RPUC1HSFRTUVVGOzIwMjYtMTAtMDc7MDM6MzI6NTEgUE07MjkyNw=="/>
+        <attribute name="edited" value="c2hhbWE7REVTS1RPUC1HSFRTUVVGOzIwMjYtMTAtMDc7MDM6NDE6NDAgUE07MTszMDMz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="totalamount" type="Real" array="False" size=""/>
+            <declare name="amountperperson" type="Real" array="False" size=""/>
+            <input variable="totalamount"/>
+            <assign variable="amountperperson" expression="totalamount/3"/>
+            <output expression="amountperperson" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
